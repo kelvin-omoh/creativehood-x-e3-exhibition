@@ -163,7 +163,7 @@ const Hero = () => {
               Peruzzi: The Visual Curation
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-neutral-300 font-light leading-relaxed mb-6 sm:mb-8">
-              Explore the premier visual exhibition gallery capturing the historic timeline, live performance archives, and iconic studio milestones of the legendary{" "}
+              The exhibition gallery of time and events of the legendary{" "}
               <span className="relative inline-flex overflow-hidden translate-y-[2px] peruzzi-text-wrapper px-1">
                 {"PERUZZI".split("").map((char, index) => (
                   <span
