@@ -153,14 +153,14 @@ const Hero = () => {
           <div className="p-5 sm:p-8 lg:p-10 rounded-3xl border border-white/15 bg-gradient-to-br from-white/10 to-white/[0.02] backdrop-blur-2xl shadow-[2xl,_inset_0_1px_1px_rgba(255,255,255,0.15)] shadow-black/55 relative overflow-hidden">
             <div className="flex flex-wrap items-center gap-2.5 mb-4">
               <span className="px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-full">
-                Now Curating
+                Now Exhibiting
               </span>
               <span className="text-neutral-400 text-xs font-semibold tracking-[0.2em] uppercase">
                 Exhibition Gallery
               </span>
             </div>
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 bg-gradient-to-r from-white via-neutral-200 to-amber-500 bg-clip-text text-transparent leading-tight">
-              Peruzzi: The Visual Curation
+              Peruzzi: The Visual Exhibition
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-neutral-300 font-light leading-relaxed mb-6 sm:mb-8">
               The exhibition gallery of time and events of the legendary{" "}

@@ -142,7 +142,7 @@ const Model = () => {
 
       <div className="screen-max-width relative z-10">
         <div className="mb-2">
-          <span className="text-amber-500 text-xs font-semibold tracking-[0.4em] uppercase block mb-1">Curation Desk</span>
+          <span className="text-amber-500 text-xs font-semibold tracking-[0.4em] uppercase block mb-1">Exhibition Desk</span>
           <h1 id="heading" className="section-heading">Take a closer look.</h1>
         </div>
 
@@ -218,7 +218,7 @@ const Model = () => {
 
               <div className="space-y-4 text-sm text-neutral-300 font-light border-t border-white/10 pt-6">
                 <div>
-                  <span className="text-xs text-neutral-500 font-semibold tracking-wider uppercase block mb-1">Curation Details</span>
+                  <span className="text-xs text-neutral-500 font-semibold tracking-wider uppercase block mb-1">Exhibition Details</span>
                   <p className="text-neutral-300 text-sm leading-relaxed">{model.desc}</p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 border-t border-white/5 pt-4">

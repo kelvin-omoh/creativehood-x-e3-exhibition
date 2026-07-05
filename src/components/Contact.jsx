@@ -56,7 +56,7 @@ const Contact = () => {
             Join the Exhibition.
           </h2>
           <p className="text-neutral-400 font-light mb-10 text-sm sm:text-base leading-relaxed">
-            Request catalog details, private exhibition bookings, or register interest for the upcoming Peruzzi curation events.
+            Request catalog details, private exhibition bookings, or register interest for the upcoming Peruzzi exhibition events.
           </p>
 
           {/* Glassmorphic Contact Card */}
