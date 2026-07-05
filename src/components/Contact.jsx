@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <section id="contact" ref={sectionRef} className="common-padding bg-zinc relative overflow-hidden flex items-center justify-center">
       {/* Background ambient glow matching the museum theme */}
-      <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-amber-500/5 blur-[120px] pointer-events-none" />
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full blur-[120px] pointer-events-none" style={{ backgroundColor: 'rgba(var(--accent-color-rgb), 0.05)' }} />
       <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/5 blur-[120px] pointer-events-none" />
 
       <div className="screen-max-width w-full relative z-10">
@@ -110,7 +110,8 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full py-4 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-full transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-amber-500/10 uppercase tracking-widest text-xs mt-4"
+                className="w-full py-4 bg-amber-500 hover:bg-amber-400 text-black font-bold rounded-full transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg uppercase tracking-widest text-xs mt-4"
+                style={{ boxShadow: '0 10px 15px -3px rgba(var(--accent-color-rgb), 0.15)' }}
               >
                 Join
               </button>

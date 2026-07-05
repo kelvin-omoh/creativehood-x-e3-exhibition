@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --accent-color-rgb: 245, 158, 11;
+  --accent-color-hover-rgb: 251, 191, 36;
+  --accent-color: rgba(var(--accent-color-rgb), 1);
+  --accent-color-hover: rgba(var(--accent-color-hover-rgb), 1);
+  --accent-glow: rgba(var(--accent-color-rgb), 0.2);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -133,10 +141,10 @@ canvas {
 .shimmer-text {
   background: linear-gradient(
     to right,
-    #f59e0b 20%,
+    var(--accent-color) 20%,
     #ffffff 40%,
-    #f59e0b 60%,
-    #f59e0b 80%
+    var(--accent-color) 60%,
+    var(--accent-color) 80%
   );
   background-size: 200% auto;
   color: transparent;

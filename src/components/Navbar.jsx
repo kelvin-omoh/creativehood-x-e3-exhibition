@@ -133,20 +133,46 @@ const Navbar = () => {
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-xl border-b border-white/10 z-50 py-4 px-5 flex flex-col gap-4">
-          {navLists.map((nav) => {
-            const anchor = nav === 'Exhibition' ? '#' : `#${nav.toLowerCase()}`;
-            return (
-              <a
-                key={nav}
-                href={anchor}
-                onClick={() => setMenuOpen(false)}
-                className="text-sm text-gray-300 hover:text-amber-500 font-medium transition-colors py-1 border-b border-white/5"
-              >
-                {nav}
-              </a>
-            );
-          })}
+        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-2xl border-b border-white/10 z-50 py-8 px-6 flex flex-col gap-6 animate-fade-in shadow-2xl relative">
+          {/* Subtle colored glow inside dropdown */}
+          <div className="absolute -top-12 -left-12 w-48 h-48 rounded-full blur-[80px] pointer-events-none" style={{ backgroundColor: 'rgba(var(--accent-color-rgb), 0.1)' }} />
+          
+          <div className="flex flex-col gap-2 relative z-10">
+            {navLists.map((nav, index) => {
+              const anchor = nav === 'Exhibition' ? '#' : `#${nav.toLowerCase()}`;
+              return (
+                <a
+                  key={nav}
+                  href={anchor}
+                  onClick={() => setMenuOpen(false)}
+                  className="group flex items-center justify-between text-lg font-bold text-neutral-300 hover:text-white transition-all duration-300 py-3 border-b border-white/5"
+                >
+                  <span className="flex items-center gap-3">
+                    <span className="text-[10px] font-mono text-amber-500 opacity-60 group-hover:opacity-100 transition-opacity">0{index + 1}</span>
+                    {nav}
+                  </span>
+                  {/* Glowing chevron/dot accent */}
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-50 group-hover:scale-100 shadow-[0_0_8px_var(--accent-color)]" />
+                </a>
+              );
+            })}
+          </div>
+
+          {/* Premium Ticket Curation Footer inside drawer */}
+          <div className="relative z-10 mt-4 p-4 rounded-2xl bg-white/[0.03] border border-white/10 flex flex-col gap-2 shadow-inner">
+            <span className="text-amber-500 text-[10px] font-extrabold tracking-widest uppercase">E3 Studios Exhibition Space</span>
+            <div className="flex items-center justify-between text-xs text-neutral-400">
+              <span>Location: Lagos, NG</span>
+              <span>Available Offline</span>
+            </div>
+            <a 
+              href="#contact" 
+              onClick={() => setMenuOpen(false)}
+              className="mt-2 text-center py-2.5 bg-amber-500 hover:bg-amber-400 text-black text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-md"
+            >
+              Get VIP Catalog
+            </a>
+          </div>
         </div>
       )}
     </header>

@@ -12,6 +12,10 @@ export default {
           300: "#42424570",
         },
         zinc: "#101010",
+        amber: {
+          500: "rgba(var(--accent-color-rgb), <alpha-value>)",
+          400: "rgba(var(--accent-color-hover-rgb), <alpha-value>)",
+        },
       },
     },
   },

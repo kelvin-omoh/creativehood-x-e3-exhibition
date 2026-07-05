@@ -118,7 +118,7 @@ const Hero = () => {
           <div className="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] aspect-[3/4] rounded-3xl overflow-hidden border border-white/15 shadow-[2xl,_inset_0_1px_1px_rgba(255,255,255,0.15)] bg-gradient-to-b from-white/5 to-white/[0.01] backdrop-blur-md">
 
             {/* Elegant outer glow ring */}
-            <div className="absolute inset-0 rounded-3xl border border-amber-500/10 pointer-events-none z-30" />
+            <div className="absolute inset-0 rounded-3xl border border-amber-500 opacity-10 pointer-events-none z-30" />
 
             {/* Slideshow inside the frame */}
             <div className="absolute inset-0 z-10 flex items-center justify-center overflow-hidden">
@@ -152,7 +152,7 @@ const Hero = () => {
         <div className="lg:col-span-7 text-left hero-text-content lg:order-1 order-2">
           <div className="p-5 sm:p-8 lg:p-10 rounded-3xl border border-white/15 bg-gradient-to-br from-white/10 to-white/[0.02] backdrop-blur-2xl shadow-[2xl,_inset_0_1px_1px_rgba(255,255,255,0.15)] shadow-black/55 relative overflow-hidden">
             <div className="flex flex-wrap items-center gap-2.5 mb-4">
-              <span className="px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-full">
+              <span className="px-3 py-1 text-[10px] font-extrabold uppercase tracking-widest text-amber-500 border rounded-full" style={{ backgroundColor: 'rgba(var(--accent-color-rgb), 0.1)', borderColor: 'rgba(var(--accent-color-rgb), 0.2)' }}>
                 Now Exhibiting
               </span>
               <span className="text-neutral-400 text-xs font-semibold tracking-[0.2em] uppercase">
@@ -162,7 +162,7 @@ const Hero = () => {
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 bg-gradient-to-r from-white via-neutral-200 to-amber-500 bg-clip-text text-transparent leading-tight">
               Creativehood & E3 Studio Presents
             </h1>
-            <p className="text-base sm:text-lg lg:text-xl text-neutral-300 font-light leading-relaxed mb-6 sm:mb-8">
+            <p className="text-lg sm:text-xl lg:text-2xl text-neutral-300 font-light leading-relaxed mb-6 sm:mb-8">
               The exhibition gallery of time and events of the legendary{" "}
               <span className="relative inline-flex overflow-hidden translate-y-[2px] peruzzi-text-wrapper px-1">
                 {"PERUZZI".split("").map((char, index) => (
@@ -178,7 +178,8 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#highlights"
-                className="px-8 py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-full shadow-lg shadow-amber-500/20 transition-all duration-300 transform hover:-translate-y-0.5 animate-pulse-subtle"
+                className="px-8 py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 animate-pulse-subtle"
+                style={{ boxShadow: '0 10px 15px -3px rgba(var(--accent-color-rgb), 0.3)' }}
               >
                 Explore Gallery
               </a>

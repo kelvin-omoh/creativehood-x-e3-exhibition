@@ -11,6 +11,14 @@ import {
 
 export const navLists = ["Exhibition", "Gallery", "Highlights", "Biography", "Contact"];
 
+export const themes = [
+  { name: 'Gold', rgb: '245, 158, 11', hoverRgb: '251, 191, 36', color: '#f59e0b' },
+  { name: 'Green', rgb: '0, 230, 118', hoverRgb: '105, 240, 174', color: '#00e676' },
+  { name: 'Blue', rgb: '30, 144, 255', hoverRgb: '99, 184, 255', color: '#1e90ff' },
+  { name: 'Red', rgb: '255, 45, 85', hoverRgb: '255, 94, 126', color: '#ff2d55' },
+  { name: 'Purple', rgb: '168, 85, 247', hoverRgb: '192, 132, 252', color: '#a855f7' }
+];
+
 export const hightlightsSlides = [
   {
     id: 1,

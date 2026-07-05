@@ -213,7 +213,7 @@ const Model = () => {
               </h3>
               <p className="text-neutral-400 font-semibold mb-6 flex items-center justify-between">
                 <span>Artist: <span className="text-white hover:underline cursor-pointer">PERUZZI</span></span>
-                <span className="text-xs font-mono bg-white/5 px-2.5 py-1 rounded border border-white/5 text-amber-500/80">{model.exif}</span>
+                <span className="text-xs font-mono bg-white/5 px-2.5 py-1 rounded border border-white/5 text-amber-500 opacity-80">{model.exif}</span>
               </p>
 
               <div className="space-y-4 text-sm text-neutral-300 font-light border-t border-white/10 pt-6">
@@ -259,9 +259,10 @@ const Model = () => {
                       onClick={() => setModel(item)}
                       className={`cursor-pointer transition-all duration-300 relative rounded-xl overflow-hidden border-2 ${
                         model.id === item.id 
-                          ? "border-amber-500 scale-105 shadow-lg shadow-amber-500/20" 
+                          ? "border-amber-500 scale-105 shadow-lg" 
                           : "border-white/10 opacity-55 hover:opacity-90"
                       }`}
+                      style={model.id === item.id ? { boxShadow: '0 10px 15px -3px rgba(var(--accent-color-rgb), 0.2)' } : {}}
                     >
                       <div className="w-16 h-20 bg-neutral-900 flex items-center justify-center p-0.5">
                         <img src={item.img} alt="" className="w-full h-full object-cover rounded-lg" />
