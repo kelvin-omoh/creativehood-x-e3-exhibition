@@ -160,7 +160,7 @@ const Hero = () => {
               </span>
             </div>
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 bg-gradient-to-r from-white via-neutral-200 to-amber-500 bg-clip-text text-transparent leading-tight">
-              Peruzzi: The Visual Exhibition
+              Creativehood & E3 Studio Presents
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-neutral-300 font-light leading-relaxed mb-6 sm:mb-8">
               The exhibition gallery of time and events of the legendary{" "}
